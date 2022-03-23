@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="444" translatesAutoresizingMaskIntoConstraints="NO" id="kev-eM-ZAf">
+                                <rect key="frame" x="0.0" y="-270" width="414" height="1166"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LP6-7z-W0N">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="brC-zV-JT9">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="LP6-7z-W0N" secondAttribute="bottom" id="7oi-61-MSl"/>
+                            <constraint firstItem="LP6-7z-W0N" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="S5L-vt-axp"/>
+                            <constraint firstItem="kev-eM-ZAf" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="-270" id="T8R-31-PHM"/>
+                            <constraint firstItem="LP6-7z-W0N" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="U4i-tv-2zK"/>
+                            <constraint firstItem="kev-eM-ZAf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hXF-VX-8da"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LP6-7z-W0N" secondAttribute="trailing" id="hmW-GB-k0Q"/>
+                            <constraint firstItem="kev-eM-ZAf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yiT-H9-ou3"/>
+                            <constraint firstAttribute="bottom" secondItem="kev-eM-ZAf" secondAttribute="bottom" id="zjz-Ot-Jzo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="444" width="2000" height="1500"/>
+    </resources>
+</document>
